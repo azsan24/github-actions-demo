@@ -1,0 +1,22 @@
+name: My GitHub Actions Workflow
+run-name: azsan is exploring GitHub Actions 🚀
+on:
+  push:
+    branches:
+      - main
+
+env:
+  PROJECT_NAME: githubactions-Demo
+  COURSE: LLMOps Course
+      
+jobs:
+  myexamplejob:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Checkout the repo"
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: printenv
+      - run: echo "This is the env variable PROJECT_NAME: ${{ env.PROJECT_NAME }}"
+      - run: echo "This is the env variable COURSE: ${{ env.COURSE }}"
+
