@@ -1,8 +1,8 @@
-name: My Github workflow
+name: My Github workflow 1
 on:
   push:
     branches:
-      -main
+      - main
 env:
   PROJECT_NAME: GitHub-Actions-Demo
   COURSE: LLMOPS-with-GitHub-Actions
