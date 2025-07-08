@@ -1,22 +1,21 @@
-name: My GitHub Actions Workflow
-run-name: azsan is exploring GitHub Actions 🚀
+name: My Github workflow
 on:
   push:
     branches:
-      - main
-
+      -main
 env:
-  PROJECT_NAME: githubactions-Demo
-  COURSE: LLMOps Course
-      
+  PROJECT_NAME: GitHub-Actions-Demo
+  COURSE: LLMOPS-with-GitHub-Actions
+
 jobs:
   myexamplejob:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Checkout the repo"
-      - name: Check out repository code
+      - run: echo "Checkout the repository"
+      - name: Checkouut repository
         uses: actions/checkout@v4
-      - run: printenv
-      - run: echo "This is the env variable PROJECT_NAME: ${{ env.PROJECT_NAME }}"
-      - run: echo "This is the env variable COURSE: ${{ env.COURSE }}"
+      - run: echo "This is my first GitHub workflow"
+      - run: echo "This is the env ${{ env.PROJECT_NAME }} and course ${{ env.COURSE }}"
+      
 
+    
